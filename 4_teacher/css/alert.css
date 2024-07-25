@@ -1,0 +1,40 @@
+body
+{
+	user-select:none;
+    max-height: 100vh;
+}
+
+.error span
+{
+    position: relative;
+    top: 2px;
+}
+
+.error
+{
+	width:100%;
+	background-color:#ffafb2;
+	color:#ae4e5e;
+	font-size:20px;
+	text-align:center;
+	position:absolute;
+	top: 110px;
+}
+
+.success span
+{
+    position: relative;
+    top: 2px;
+}
+
+.success
+{
+	width:100%;
+	background-color:#d3edd9;
+	color:#6f8b76;
+	font-size:20px;
+	text-align:center;
+	position:absolute;
+	top: 110px;
+}
+

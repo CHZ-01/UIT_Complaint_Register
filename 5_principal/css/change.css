@@ -1,0 +1,124 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Tektur', cursive;
+	font-size:18px;
+	cursor:default;
+	user-select:none;
+}
+
+body
+{
+	height: 100vh;
+	max-height: 100vh;
+}
+
+.logpg
+{
+	position:relative;
+	width:400px;
+	height:440px;
+	background:transparent;
+	border:2px ;
+	border-radius:20px;	
+	display:flex;
+	justify-content:center;
+	bottom:500;
+	align-items:center;
+	overflow:hidden;
+	margin-top:70px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	transition:.7s;	
+}
+
+.logpg:hover
+{
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}	
+
+.logpg .forgot
+{
+	width:100%;
+	padding:40px;
+}
+
+.forgot h2
+{
+    text-align:center;
+	font-size: 25px;
+}
+
+.inlog
+{
+    position: relative;
+    width: 90%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+    margin-left: 20px;
+}
+
+.inlog label
+{
+    position:absolute;
+	top:50%;
+	left:5px;
+	transform:translateY(-50%);
+	font-size:1em;
+	font-weight:500;
+	pointer-events:none;
+	transition:.5s;
+}
+
+.inlog input:focus~label,
+.inlog input:valid~label
+{
+    top:-5px;
+}
+
+.inlog input
+{
+	width:100%;
+	height:100%;
+	background:transparent;
+	border:none;
+	outline:none;
+	font-size:1em;
+	font-weight:600;
+	padding:0 35px 0 5px;
+	cursor:pointer;
+}
+
+.inlog .icon
+{
+	position:absolute;
+	right:8px;
+	font-size:1.2em;
+	line-height:57px;
+}
+
+.btn2{
+	width: 80%;
+    height: 45px;
+    background: grey;
+    border: 3px solid black;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+    transition: 0.5s;
+    margin-left: 32px;
+}
+
+.btn2 b{
+		 cursor:pointer;	
+}
+
+.btn2:hover
+{
+    background: #343434;
+    color: grey;
+}

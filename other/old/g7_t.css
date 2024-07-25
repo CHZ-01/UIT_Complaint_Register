@@ -1,0 +1,183 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Tektur', cursive;
+    font-size: 18px;
+	cursor:default;
+	user-select:none;
+}
+
+body{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+}
+
+header{
+	position:absolute;
+    top:0;
+	left:0;
+	width:100%;
+	padding:10px 100px;
+	background:grey;
+	display:flex;
+    justify-content:space-between; 
+	align-items:center;
+	z-index:99;
+}
+
+header img{
+	height:90px; 
+	width:300px;
+	float:left;
+}
+
+.na{
+	position:relative;
+	font-size:1em;
+	color:black;
+	text-decoration:none;
+	font-weight:500;
+    margin-left:40px;
+}
+
+.na::after{
+    content:'';
+	position:absolute;
+	left:0;
+	bottom:-6px;
+	width:100%;
+	height:3px;
+	background:black;
+	border-radius:5px;
+	transform-origin:center;
+	transform:scaleX(0);
+    transition:transform .5s;  
+}   
+
+.na:hover::after{
+        transform-origin:center;	
+        transform:scaleX(1);
+}
+
+.navi .log{
+	     width:130px; 
+		 height:50px;
+		 margin-left:40px;
+		 background:transparent;
+		 border:2px solid black; 
+		 outline:none;
+		 border-radius:6px;
+		 cursor:pointer;
+		 color:black;
+		 font-weight:500;
+		 font-size:1em;
+		 transition:1s;
+}
+
+.navi b{
+		cursor:pointer;	
+}
+
+.navi .log:hover{
+	     background:white;
+}
+
+.btn
+{
+	position: relative;
+    bottom: 55px;
+	width:70%;
+	height:45px;
+	background:grey;
+	border:3px solid black;
+	outline:none;
+	border-radius:6px;
+	cursor:pointer;
+	font-size:1em;
+	color:black;
+	font-weight:500;
+    margin-top: 47px;
+    margin-left: 138px;
+	transition:0.5s;
+}
+
+.btn b{
+	cursor:pointer;	
+}
+
+.btn:hover{
+	     background:white;
+}
+
+.head
+{
+	margin-top:30px; 
+	font-size:25px;
+	text-transform:uppercase;
+}
+
+
+.complainbox
+{
+	display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 22px;
+    box-shadow: 0 0 15px black;
+    flex-direction: column;
+    width: 521px;
+    height: 505px;
+    margin-top: 100px;
+}
+
+.complain
+{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    margin-right: 213px;
+}
+
+.subject
+{
+	margin-left: 42px;
+    margin-top: -10px;
+}
+
+.content
+{
+	margin-left: 42px;
+}
+
+.mytext
+{
+	width: 165%;
+	padding:10px;
+	resize:none;
+	border-radius: 22px;
+    border-width: 3px;
+	cursor:text;
+}
+
+#t2
+{
+    height: 79%;
+    border-radius: 26px;
+}
+
+.count1
+{
+    margin-top: -10px;
+    margin-left: 145%;
+}
+
+.count2
+{
+    margin-top: -10px;
+    margin-left: 140%;
+}
+

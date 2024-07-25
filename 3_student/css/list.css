@@ -1,0 +1,395 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Tektur', cursive;
+    font-size: 18px;
+	cursor:default;	
+}
+
+body{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+    max-height: 100vh;
+	user-select:none;
+}
+
+header{
+	position:absolute;
+    top:0;
+	left:0;
+	width:100%;
+	padding:10px 100px;
+	background:grey;
+	display:flex;
+    justify-content:space-between; 
+	align-items:center;
+	z-index:99;
+}
+
+header img{
+	height:90px; 
+	width:300px;
+	float:left;
+}
+
+.na{
+	position:relative;
+	font-size:1em;
+	color:black;
+	text-decoration:none;
+	font-weight:500;
+    margin-left:40px;
+	transition:0.4s;
+}
+
+.na:hover
+{
+	color:gainsboro;
+}	
+
+.na::after{
+          content:'';
+		  position:absolute;
+		  left:0;
+		  bottom:-6px;
+		  width:100%;
+		  height:3px;
+		  background:gainsboro;
+		  border-radius:5px;
+		  transform-origin:center;
+		  transform:scaleX(0);
+          transition:transform .5s;  
+}   
+
+.na:hover::after{
+        transform-origin:center;	
+        transform:scaleX(1);
+}
+
+.navi .log{
+	     width:130px; 
+		 height:50px;
+		 margin-left:40px;
+		 background:transparent;
+		 border:2px solid black; 
+		 outline:none;
+		 border-radius:6px;
+		 cursor:pointer;
+		 color:black;
+		 font-weight:500;
+		 font-size:1em;
+		 transition:1s;
+}
+
+.navi b{
+		cursor:pointer;	
+}
+
+.navi .log:hover
+{
+	background: #343434;
+    color: #c8c8c8;
+}
+
+.bta a
+{
+    position: absolute;
+    bottom: -6px;
+}
+
+.btn
+{
+	position: relative;
+    bottom: 25px;
+    left: -108px;
+	width:70%;
+	height:45px;
+	background:grey;
+	border:3px solid black;
+	outline:none;
+	border-radius:6px;
+	cursor:pointer;
+	font-size:1em;
+	color:black;
+	font-weight:500;
+    margin-top: 47px;
+    margin-left: 138px;
+	transition:0.5s;
+}
+
+.btn b{
+	cursor:pointer;	
+}
+
+.btn:hover
+{
+	background: #343434;
+    color: grey;
+}
+
+.complainbox
+{
+	display: flex;
+    align-items: center;
+    border: 2px;
+    border-radius: 22px;
+    flex-direction: column;
+    width: 521px;
+    height: 480px;
+    margin-top: 90px;
+	position: fixed;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	transition:.7s;
+}
+
+.complainbox:hover
+{
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.head
+{
+	margin-top:30px; 
+	font-size:25px;
+	text-transform:uppercase;
+}
+
+.complain
+{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    margin-right: 213px;
+}
+
+.subject
+{
+	margin-left: 42px;
+}
+
+.content
+{
+	margin-left: 42px;
+    margin-top: 10px;
+}
+
+.mytext
+{
+	width: 165%;
+	padding:10px;
+	resize:none;
+	border-radius: 22px;
+    border-width: 3px;
+	cursor:text;
+}
+
+#t2
+{
+    height: 80%;
+    border-radius: 26px;
+}
+
+.count1
+{
+    margin-top: -10px;
+    margin-left: 145%;
+}
+
+.count2
+{
+    margin-top: -10px;
+    margin-left: 140%;
+}
+
+.null
+{
+	margin-top: 70px;
+    opacity: 0.7;
+}
+
+.null img
+{
+    width: 200px;
+}
+
+.redo p
+{
+	font-size: 28px;
+    color: grey;
+}
+
+.redo a
+{
+	font-size: 28px;
+    color: grey;
+    margin-left: 215px;
+	text-decoration:none;
+	transition:0.7s;
+	position:relative;
+}
+
+
+.redo a:hover
+{
+    color: black;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+.redo a::after
+{
+    content:'';
+	position:absolute;
+	left:0;
+	bottom:-6px;
+	width:100%;
+	height:3px;
+	background:black;
+	border-radius:5px;
+	transform-origin:center;
+	transform:scaleX(0);
+    transition:transform .5s;  
+} 
+
+.redo a:hover::after
+{
+        transform-origin:center;	
+        transform:scaleX(1);
+}
+
+.paginate
+{
+	position: relative;
+    top: 235px;
+	margin-top:15px;
+}
+
+.paginate a
+{
+	display: inline-block;
+    margin: 0 10px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+	margin-left:30px;
+	text-decoration:none;
+	transition:0.7s;
+	cursor: pointer;
+	color:grey;
+	position:relative;
+    bottom: 0px;
+	line-height:1.9;
+}	
+
+.paginate a b
+{
+	font-size:22px;	
+	cursor:pointer;
+}
+
+.paginate a:hover
+{
+	background-color:grey;
+	color:wheat;
+}
+
+.cp b 
+{
+	display: inline-block;
+    color: wheat;
+    background: grey;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+a .active
+{
+	background-color:grey;
+	color:wheat;
+}
+
+.previous
+{
+	position: absolute;
+    top: 50%;
+    left: 25%;
+}
+
+.prev
+{
+	width:70px;
+	cursor:pointer;
+}
+
+.next
+{
+	position: absolute;
+    top: 50%;
+    right: 25%;
+}
+
+.nxt
+{
+	width:70px;
+	cursor:pointer;
+}
+
+.ico
+{
+    margin-left: 10px;
+	position: relative;
+	top: 2px;
+}
+
+.show
+{
+    position: relative;
+	top: -20px;
+	left: 77px;
+}
+			
+.info
+{
+    position: relative;
+    top: 240px;
+    left: 390px;
+	text-transform:uppercase;
+	width:230px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius:10px;
+	padding:10px;	
+}
+
+/* .show,.info:hover */
+/* { */
+	/* left: 535px; */
+/* } */
+
+.info h2
+{
+	margin-top:10px;
+}	
+
+.icoinfo
+{
+    position: relative;
+    top: 5px;
+}
+
+.bta h2
+{
+	text-transform:uppercase;
+    font-size: 25px;
+    position: relative;
+    left: 115px;
+}

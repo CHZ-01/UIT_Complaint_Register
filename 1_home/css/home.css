@@ -1,0 +1,122 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Tektur', cursive;
+	cursor:default;
+	user-select:none;
+}
+
+body
+{
+	height: 100vh;
+	max-height: 100vh;
+}
+
+header
+{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	background-color:grey;
+}
+
+.logo
+{
+    height: 113px;
+    width: 331px;
+}
+
+.container
+{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.welcome 
+{
+    text-align: center;
+    width: 575px;
+    height: 495px;
+    padding: 20px;
+    border-radius: 19px;
+    overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	transition:.7s;
+}
+
+.welcome:hover
+{
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.content h1 
+{
+    font-size: 50px;
+}
+
+.content hr
+{
+    width: 200px;
+    height: 0px;
+    color: black;
+    border-top: dotted 7px;
+    margin-left: 170px;
+    margin-top: -8px;
+}
+
+.b2
+{
+	font-size:22px;
+	margin-top:15px;
+}
+
+.b {
+    font-size: 30px;
+    margin-top: 7px;
+}
+
+.btn
+{
+	padding:20px;
+	
+}
+
+.btn a
+{
+	text-decoration:none;
+	background-color:white;
+	color:black;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.enter{
+	width:50%;
+	height:45px;
+	background:grey;
+	border:3px solid black;
+	outline:none;
+	border-radius:6px;
+	cursor:pointer;
+	font-size:1em;
+	color:black;
+	font-weight:500;
+	margin-top:-3px;
+	transition:0.5s;
+}
+
+.enter b
+{
+	cursor:pointer;
+	font-size: 20px;	 
+}
+
+.enter:hover
+{
+    background: #343434;
+    color: grey;
+}

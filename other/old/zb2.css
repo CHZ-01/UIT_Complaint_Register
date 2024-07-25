@@ -1,0 +1,71 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Tektur', cursive;
+	cursor:default;
+	user-select:none;
+}
+
+header
+{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	background-color:grey;
+}
+
+.logo
+{
+    height: 113px;
+    width: 331px;
+}
+
+.select
+{
+	display: flex;
+    flex-direction: row;
+	margin-top:78px;
+}
+
+.teacher
+{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    width: 400px;
+    height: 380px;
+    position: relative;
+    left: 300px;
+}
+
+.teacher:hover
+{
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.student
+{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    width: 400px;
+    height: 380px;
+    position: relative;
+    left: 300px;
+	margin-left: 120px;
+}
+
+.select .sep
+{
+	width: 125px;
+	height:3px;
+	background:black;
+    margin-left: 137px;
+    margin-top: -3px;
+}

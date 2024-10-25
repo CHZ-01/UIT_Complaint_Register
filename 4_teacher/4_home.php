@@ -1,6 +1,7 @@
 <?php
 	session_start();
 	
+	$tid=$_SESSION['s_tid'];
 	$tname=$_SESSION['s_tname'];
 	
 	if(!isset($_SESSION['s_tid']))
@@ -55,15 +56,15 @@
 			$qry=mysqli_query($conn,$show1);
 			$row1=mysqli_num_rows($qry);
 			
-			$show2="SELECT * FROM teacher_sol";
+			$show2="SELECT * FROM teacher_sol WHERE tid='$tid'";
 			$qry=mysqli_query($conn,$show2);
 			$row2=mysqli_num_rows($qry);
 			
-			$show3="SELECT * FROM principal_approved";
+			$show3="SELECT * FROM principal_approved WHERE tid='$tid'";
 			$qry=mysqli_query($conn,$show3);
 			$row3=mysqli_num_rows($qry);
 			
-			$show4="SELECT * FROM principal_rejected";
+			$show4="SELECT * FROM principal_rejected WHERE tid='$tid'";
 			$qry=mysqli_query($conn,$show4);
 			$row4=mysqli_num_rows($qry);
 			

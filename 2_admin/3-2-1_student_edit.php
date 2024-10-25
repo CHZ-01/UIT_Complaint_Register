@@ -64,7 +64,7 @@
 						<script>
 							function redirect()
 							{	
-								location.replace("3_student_view.php?page=<?php echo $pg;?>");
+								location.replace("3-2_student_view.php?page=<?php echo $pg;?>");
 							}
 							setTimeout('redirect()',1000);
 						</script>

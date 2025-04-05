@@ -74,6 +74,9 @@
 				$del="DELETE FROM principal_pending_t WHERE sub='$sub' AND sid='$sid'";
 				$qry=mysqli_query($conn,$del);
 				
+				$del="DELETE FROM admin_send WHERE sub='$sub' AND sid='$sid'";
+				$qry=mysqli_query($conn,$del);
+
 				if($qry)
 				{	
 			?>
